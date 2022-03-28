@@ -1,0 +1,21 @@
+.homepage {
+  width: 100%;
+  height: 100vh;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: stretch;
+  align-items: stretch;
+  color: var(--primary-color);
+}
+.homepage-leftside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.homepage-content {
+  text-align: left;
+}
+.hero {
+  width: 100%;
+}
