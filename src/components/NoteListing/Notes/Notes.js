@@ -1,13 +1,14 @@
 import Header from "../../Header/Header";
 import Card from "../../Card/Card";
-import Filters from "../SideMenu/Filters";
+
+import MenuBar from "../SideMenu/MenuBar";
 // import "./ProductListing.css";
 const Notes = () => {
   return (
     <>
       <Header />
       <div className="section-div bg-dull">
-        <Filters />
+        <MenuBar />
         <div className="right-section sm-padding bg-dull"></div>
       </div>
     </>

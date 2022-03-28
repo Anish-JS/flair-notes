@@ -1,5 +1,4 @@
-// import { useFilters } from "../../store/filter-context";
-import "./Filters.css";
+import "./MenuBar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faTag,
@@ -8,25 +7,10 @@ import {
   faHome,
   faUserCircle,
 } from "@fortawesome/free-solid-svg-icons";
-const Filters = (props) => {
-  // const { filterState, dispatchFilter } = useFilters();
-  // const {
-  //   sort,
-  //   typeOfProduct,
-  //   category,
-  //   rating,
-  //   priceRange,
-  //   inStock,
-  //   fastDelivery,
-  // } = filterState;
-
+const MenuBar = (props) => {
   return (
     <>
       <div class="left-section md-padding bg-dull">
-        {/* <div class="filter para-sm-xs bold">
-          <div class="xs-gutter">Filters</div>
-        </div> */}
-
         <div class="category xs-gutter">
           <div class="para-sm xs-gutter xxs-padding">
             <FontAwesomeIcon icon={faHome} />
@@ -54,4 +38,4 @@ const Filters = (props) => {
   );
 };
 
-export default Filters;
+export default MenuBar;
