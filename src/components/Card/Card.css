@@ -1,15 +1,12 @@
 @import "../../shared.css";
-/* @import "https://pixelcss.netlify.app/components/Card/Card.css"; */
+
 .card-container {
-  /* width: 15rem; */
+  width: 20rem;
+  box-sizing: border-box;
 }
-.img-full {
-  width: 240px;
-  height: 240px;
-  object-fit: cover;
-}
+
 .card__actions {
-  width: 80%;
+  width: 88%;
 }
 .card__actions a {
   width: 100%;
@@ -18,12 +15,14 @@
 .card__content {
   display: flex;
   flex-direction: column;
+  width: 100%;
   align-items: center;
   justify-content: center;
 }
 
 .card__info {
   text-align: center;
+  width: 88%;
 }
 /* WishList */
 .wish-list-position {
@@ -35,7 +34,7 @@
   cursor: pointer;
   right: 0;
   background-color: var(--txt-color);
-  color: var(--danger-color);
+  color: var(--primary-color);
   display: flex;
   justify-content: center;
   align-items: center;

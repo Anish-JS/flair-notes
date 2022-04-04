@@ -13,7 +13,14 @@ const useAuth = () => useContext(AuthContext);
 const AuthProvider = ({ children }) => {
   const navigate = useNavigate();
   useEffect(() => {
-    if (localStorage.getItem("token")) setIsLoggedIn(true);
+    if (localStorage.getItem("token")) {
+      setIsLoggedIn(true);
+      navigate("/notes");
+    } else {
+      setIsLoggedIn(false);
+      localStorage.removeItem("token");
+      localStorage.removeItem("user");
+    }
   }, [localStorage.getItem("token")]);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [error, setError] = useState(false);
@@ -29,6 +36,7 @@ const AuthProvider = ({ children }) => {
           email: email,
           password: password,
         });
+        console.log(response);
         localStorage.setItem("token", response.data.encodedToken);
         localStorage.setItem("user", JSON.stringify(response.data.foundUser));
         setIsLoggedIn(true);
@@ -43,6 +51,7 @@ const AuthProvider = ({ children }) => {
   const logoutHandler = () => {
     setIsLoggedIn(false);
     localStorage.removeItem("token");
+    localStorage.removeItem("user");
 
     navigate("/");
   };
@@ -61,6 +70,7 @@ const AuthProvider = ({ children }) => {
           email: details.email,
           password: details.password,
         });
+        console.log(response);
 
         localStorage.setItem("token", response.data.encodedToken);
         localStorage.setItem("user", JSON.stringify(response.data.createdUser));

@@ -11,7 +11,7 @@ const Signup = () => {
   return (
     <>
       <div className="center-div">
-        <div className="card-container login-container sm-gutter sm-padding sm-brr">
+        <div className=" login-container sm-gutter sm-padding sm-brr">
           <div className="card__content xs-gutter">
             <div className="card__heading para-md semibold-weight ">SignUp</div>
           </div>

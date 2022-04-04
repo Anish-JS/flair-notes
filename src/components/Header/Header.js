@@ -1,6 +1,7 @@
 import React from "react";
 
 import "./Header.css";
+import Search from "./Search";
 const Header = () => {
   return (
     <>
@@ -10,6 +11,9 @@ const Header = () => {
             <span className="bg-secondary">Flair</span>
             <span className="clr-dark"> Notes</span>
           </div>
+        </div>
+        <div className="search-pos sm-gutter">
+          <Search />
         </div>
       </div>
     </>
