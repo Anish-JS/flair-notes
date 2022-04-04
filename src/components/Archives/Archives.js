@@ -1,6 +1,7 @@
 import { useArchive } from "../../store/archive-context";
 import MenuBar from "../NoteListing/SideMenu/MenuBar";
 import Card from "../Card/Card";
+import Header from "../Header/Header";
 
 const Archives = () => {
   const { archivesList } = useArchive();
@@ -10,6 +11,7 @@ const Archives = () => {
   ));
   return (
     <>
+      <Header />
       <div className="section-div bg-dull">
         <div className="left-section md-padding bg-dull">
           <MenuBar />
