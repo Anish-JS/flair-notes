@@ -1,1 +1,7 @@
 @import "../../shared.css";
+.search {
+  cursor: pointer;
+}
+.searchbar {
+  width: 20rem;
+}

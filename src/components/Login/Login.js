@@ -13,7 +13,7 @@ const Login = () => {
   return (
     <>
       <div className="center-div bg-dull">
-        <div className="card-container login-container sm-gutter sm-padding sm-brr">
+        <div className="login-container  size sm-gutter sm-padding sm-brr">
           <div className="card__content xs-gutter">
             <div className="card__heading para-md semibold-weight">Login</div>
           </div>
@@ -72,7 +72,7 @@ const Login = () => {
             Login
           </button>
 
-          <div className="card__actions xs-gutter">
+          <div className="card__actions xs-gutter center">
             <div className="card__bookmark para-sm-xs semibold-weight">
               <Link to="/signup">Create New Account</Link>
             </div>

@@ -23,7 +23,12 @@
 .login-container {
   width: 30rem;
   align-items: center;
+  display: flex;
+  flex-direction: column;
   box-sizing: border-box;
+  justify-content: center;
+  background-color: var(--txt-color);
+  color: var(--primary-color);
 }
 
 .card__info {
@@ -50,7 +55,6 @@
 .textbox {
   background-color: var(--txt-color);
   color: var(--dark-accent);
-  /* border-color: var(--secondary-color); */
 }
 
 .error {
